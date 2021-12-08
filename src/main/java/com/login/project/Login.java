@@ -25,6 +25,7 @@ public class Login extends HttpServlet {
         {
             HttpSession session = req.getSession();
             session.setAttribute("user", optionalUser.get());
+            resp.getWriter().write("<span style=\"color: red\">Hello " + optionalUser.get().getName()+"<\\span>");
         }
         else
         {

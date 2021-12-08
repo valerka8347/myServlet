@@ -25,7 +25,7 @@ public class Validate {
             if (rs.next()){
                 User user = new User()
                         .setId(rs.getInt("Id"))
-                        .setLogin(rs.getString("loging"))
+                        .setLogin(rs.getString("login"))
                         .setName(rs.getString("Name"))
                         .setRole(rs.getString("Rolle"));
 
